@@ -1,0 +1,24 @@
+{
+    "name": "distributed-hospital-backend",
+    "version": "1.0.0",
+    "description": "Distributed Hospital Appointment System Backend",
+    "main": "server.js",
+    "scripts": {
+      "start": "node start-servers.js",
+      "seed": "node seed.js",
+      "server1": "SERVER_ID=1 PORT=5001 node server.js",
+      "server2": "SERVER_ID=2 PORT=5002 node server.js",
+      "server3": "SERVER_ID=3 PORT=5003 node server.js",
+      "dev": "node start-servers.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "cors": "^2.8.5",
+      "sqlite3": "^5.1.6",
+      "uuid": "^9.0.0",
+      "axios": "^1.5.0"
+    },
+    "keywords": ["distributed", "hospital", "appointment", "dc"],
+    "author": "",
+    "license": "MIT"
+  }
